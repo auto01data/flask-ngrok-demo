@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: flask-demo
+    ports:
+      - "5000:5000"   # publish container port 5000 to host
+    restart: unless-stopped
